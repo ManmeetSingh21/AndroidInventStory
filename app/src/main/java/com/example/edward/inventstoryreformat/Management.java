@@ -25,8 +25,8 @@ public class Management extends Activity {
         //check if it's the button for Borganization(which is button to access Org.)
         if(v.getId() == R.id.BAddevents)
         {
-            Intent i = new Intent(Management.this, ManagInsert.class);
-            startActivity(i);
+            //Intent i = new Intent(Management.this, ManagInsert.class);
+            //startActivity(i);
         }
     }
 
@@ -34,8 +34,8 @@ public class Management extends Activity {
     {
         if(v.getId() == R.id.BMcalendar)
         {
-            Intent i = new Intent(Management.this, Calendarviewmanag.class);
-            startActivity(i);
+            //Intent i = new Intent(Management.this, Calendarviewmanag.class);
+            //startActivity(i);
         }
     }
 
