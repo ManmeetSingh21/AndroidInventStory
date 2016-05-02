@@ -19,7 +19,7 @@
         android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome, "
+        android:text="@string/welcome"
         android:textColorHighlight="@color/colorPrimaryDark"
 
 
@@ -31,7 +31,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/button_blue"
         android:onClick="onOrganButton"
-        android:text="Organization"
+        android:text="@string/organization"
         android:id="@+id/BOrganization"
         android:padding="10dp"
         android:layout_gravity="center"
@@ -45,7 +45,7 @@
         android:onClick="onManagButton"
         android:id="@+id/BManagement"
         android:padding="10dp"
-        android:text="Management"
+        android:text="@string/management"
         android:layout_gravity="center"
         />
 

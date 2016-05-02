@@ -2,4 +2,7 @@
     <string name="app_name">inventstoryreformat</string>
     <string name="emptyString" />
     <string name="emptyString2" />
+    <string name="organization">Organization</string>
+    <string name="management">Management</string>
+    <string name="welcome">Welcome,</string>
 </resources>
