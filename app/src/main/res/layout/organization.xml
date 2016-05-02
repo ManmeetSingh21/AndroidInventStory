@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#3e8bc0">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,18 +15,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
+        android:background="@drawable/mycustombutton"
+        android:textColor="@color/colorPrimary"
+        android:onClick="onAddingButton"
+        android:padding="10dp"
+        android:text="Add"
         android:id="@+id/BAddInven"
-        android:layout_gravity="right"
-        android:onClick="onAddingButton" />
+        android:layout_below="@+id/Blogin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/mycustombutton"
+        android:textColor="@color/colorPrimary"
+        android:onClick="onSelectButton"
+        android:padding="10dp"
         android:text="Select"
         android:id="@+id/Bselect"
-        android:layout_gravity="right"
-        android:onClick="onSelectButton" />
+        android:layout_below="@+id/Blogin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,5 +45,6 @@
         android:text="(Here, there will be a table or sort to display inventory"
         android:id="@+id/textView12"
         android:layout_weight="0.34" />
+
 
 </LinearLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#3e8bc0">
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,9 +88,15 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/mycustombutton"
+        android:textColor="@color/colorPrimary"
+        android:onClick="onSignUpClick"
+        android:padding="10dp"
         android:text="Sign Up"
         android:id="@+id/BSignUpButton"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onSignUpClick" />
+        android:layout_below="@+id/Blogin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>

@@ -2,37 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome, " />
+    android:weightSum="1"
+    android:background="#3e8bc0">
 
     <TextView
         android:layout_width="145dp"
         android:layout_height="wrap_content"
+
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/emptyString2"
         android:id="@+id/TVnameDis"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.05" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="146dp"
         android:layout_height="wrap_content"
-        android:text="Organization"
-        android:id="@+id/BOrganization"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onOrganButton" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome, "
+        android:textColorHighlight="@color/colorPrimaryDark"
+
+
+        android:layout_weight="0.25" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Management"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_blue"
+        android:onClick="onOrganButton"
+        android:text="Organization"
+        android:id="@+id/BOrganization"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_blue"
+        android:onClick="onManagButton"
         android:id="@+id/BManagement"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onManagButton" />
+        android:padding="10dp"
+        android:text="Management"
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>
